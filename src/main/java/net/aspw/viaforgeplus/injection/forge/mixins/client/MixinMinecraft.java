@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.Objects;
 
-@Mixin(Minecraft.class)
+@Mixin(value = Minecraft.class, priority = 1019)
 public abstract class MixinMinecraft {
 
     @Shadow
