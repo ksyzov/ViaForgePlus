@@ -10,6 +10,7 @@
     "block.MixinBlockLilyPad",
     "block.MixinWorld",
     "client.MixinMinecraft",
+    "entity.MixinEntity",
     "entity.MixinEntityLivingBase",
     "entity.MixinEntityPlayer",
     "entity.MixinEntityPlayerSP",
