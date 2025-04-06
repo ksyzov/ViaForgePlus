@@ -17,6 +17,7 @@ import net.minecraft.entity.projectile.EntityFireball;
 import net.minecraft.network.Packet;
 import net.minecraft.network.play.client.C02PacketUseEntity;
 import net.minecraft.network.play.client.C08PacketPlayerBlockPlacement;
+import net.minecraft.network.play.client.C09PacketHeldItemChange;
 import net.minecraft.network.play.client.C0APacketAnimation;
 import net.minecraft.util.Vec3;
 
@@ -61,6 +62,10 @@ public class Nibbles {
                     break;
                 }
             }
+        }
+
+        if (packet instanceof C09PacketHeldItemChange) {
+            return false;
         }
 
         if (swing) {
