@@ -94,7 +94,7 @@ processResources {
     inputs.property "mcversion", project.minecraft.version
 
     filesMatching("mcmod.info") {
-        expand "version": project.version, "mcversion": project.minecraft.version
+        expand "version": project.version
     }
 
     rename "(.+_at.cfg)", "META-INF/\$1"
