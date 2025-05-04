@@ -41,6 +41,8 @@ public class ProtocolBase {
         versions.addAll(ProtocolVersion.getProtocols());
 
         versions.removeIf(i -> i == ProtocolVersion.unknown || i.olderThan(ProtocolVersion.v1_7_2));
+
+        System.setProperty("com.viaversion.handlePingsAsInvAcknowledgements", "true");
     }
 
     public void inject(final Channel channel, final VFNetworkManager networkManager) {
