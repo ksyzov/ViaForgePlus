@@ -25,6 +25,7 @@
     "packets.MixinC00Handshake",
     "packets.MixinC0FPacketConfirmTransaction",
     "packets.MixinS32PacketConfirmTransaction",
+    "packets.MixinS3EPacketTeams",
     "render.MixinEntityRenderer",
     "render.MixinLayerArmorBase",
     "render.MixinModelBiped"
