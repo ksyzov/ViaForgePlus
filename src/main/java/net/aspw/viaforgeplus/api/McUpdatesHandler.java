@@ -37,7 +37,7 @@ public class McUpdatesHandler extends MinecraftInstance implements Listenable {
 
     @EventTarget
     public void onPushOut(PushOutEvent event) {
-        if (ProtocolFixer.newerThanOrEqualsTo1_13() && (shouldAnimation() || mc.thePlayer.isSneaking()))
+        if (ProtocolFixer.newerThanOrEqualsTo1_13() && (shouldAnimation()))
             event.cancelEvent();
     }
 
