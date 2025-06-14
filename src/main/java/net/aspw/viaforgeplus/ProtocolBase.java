@@ -1,5 +1,6 @@
 package net.aspw.viaforgeplus;
 
+import cats.Nibbles;
 import com.viaversion.viaversion.api.connection.UserConnection;
 import com.viaversion.viaversion.api.protocol.version.ProtocolVersion;
 import com.viaversion.viaversion.connection.UserConnectionImpl;
@@ -43,6 +44,8 @@ public class ProtocolBase {
         versions.removeIf(i -> i == ProtocolVersion.unknown || i.olderThan(ProtocolVersion.v1_7_2));
 
         System.setProperty("com.viaversion.handlePingsAsInvAcknowledgements", "true");
+
+        Nibbles.init();
     }
 
     public void inject(final Channel channel, final VFNetworkManager networkManager) {
